@@ -1,3 +1,3 @@
 # Cab Booking Website
 - This project contains a website which will help you to book site.
-- This project is build using HTML,CSS and JavaScript. hello
+- This project is build using HTML,CSS and JavaScript. 
