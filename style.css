@@ -91,15 +91,21 @@ html{
     padding-bottom: 1rem;
 }
 .linear-content .book{
-   padding: 1rem 3rem;
-   color: black;
-   font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: black;
+    font-size: 1.5rem;
 }
 .linear-content .book:hover{
     padding: 1rem 3rem;
     border: 0.5px solid white;
     border-radius: 15px;
     background: white;
+}
+.contact-form{
+    width: 45rem;
+    text-align: left;
+    padding: 2rem 1rem;
+    margin: 0 auto;
 }
 .form-heading{
     background: black;
@@ -109,28 +115,30 @@ html{
 .form-heading h1{
     color: white;
 }
-.contact-form{
-    width: 45rem;
-    background: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin: 0 auto;
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 10px;
 }
-.form-fields input{
-    padding: 2rem;
-    border: none;
-    border-bottom: 1px solid black;
+label{
+    font-size: 14px;
+    color: black;
 }
-.contact-form a{
-    background: black;
-    width: 100%;
-    display: inline-block;
-    padding: 2rem 0;
-    color: white;
-    font-size: 1.5rem;
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+textarea{
+    padding: 1px;
+    border: 1px;
+    font-size: 14px;
 }
-.submit{
-    padding-top: 2rem;
+.button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    transition: 0.4s ease;
 }
 
 

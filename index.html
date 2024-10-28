@@ -42,17 +42,35 @@
                 <div class="form-heading">
                     <h1>Book a Cab</h1>
                 </div>
-                <div class="form-fields">
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="phone">
-                    <input type="text" placeholder="when">
-                    <input type="text" placeholder="date">
-                    <input type="text" placeholder="start">
-                    <input type="text" placeholder="end">
-                </div>
-                <div class="submit">
-                    <a href="#">Submit</a>
-                </div>
+                <form action="connection.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup_time">When (Time):</label>
+                        <input type="time" id="pickup_time" name="pickup_time" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup_date">Date:</label>
+                        <input type="date" id="pickup_date" name="pickup_date" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="start_location">Start Location:</label>
+                        <input type="text" id="start_location" name="start_location" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="end_location">End Location:</label>
+                        <input type="text" id="end_location" name="end_location" required><br>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Book Now</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
