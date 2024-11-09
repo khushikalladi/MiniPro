@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(245, 200, 77, 0.801);
+    background-color: #ffc61a;
     color: black;
 }
 
@@ -32,11 +32,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover{
-    color: rgb(221, 221, 13);
+    color: #ffc61a;
 }
 
 header nav ul li a.active {
-    color: rgb(221, 221, 13);
+    color: #ffc61a;
 }
 
 .about-section {

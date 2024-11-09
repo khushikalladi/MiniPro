@@ -26,9 +26,9 @@ $sql = "INSERT INTO bookings (name, phone, pickup_time, pickup_date, start_locat
         VALUES ('$name', '$phone', '$pickup_time', '$pickup_date', '$start_location', '$end_location')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Booking successful!";
+    echo json_encode(["success" => true]);
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo json_encode(["success" => false]);
 }
 
 // Close the connection

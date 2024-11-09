@@ -68,7 +68,7 @@
                         <input type="text" id="end_location" name="end_location" required><br>
                     </div>
                     <div class="button">
-                        <button type="submit">Book Now</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -77,15 +77,23 @@
 </div>
 <!-- home section ended -->
 
-<!-- About Us-->
+<!-- Vehicle Selection Popup -->
+<div id="vehiclePopup" class="popup">
+    <div class="popup-content">
+        <h2>Choose a Vehicle</h2>
+        <button onclick="selectVehicle('Sedan')">Sedan</button>
+        <button onclick="selectVehicle('SUV')">SUV</button>
+        <button onclick="selectVehicle('Hatchback')">Hatchback</button>
+        <button onclick="selectVehicle('Luxury')">Luxury</button>
+        <button onclick="closePopup('vehiclePopup')">Cancel</button>
+    </div>
+</div>
 
-<div class="main-about">
-    <h1>About Us</h1>
-    <div class="inner-about">
-        <div class="about-container">
-            <div class="inner-box">
-                <img src="" alt="">
-            </div>
-        </div>
+<!-- Driver Details Popup -->
+<div id="driverPopup" class="popup">
+    <div class="popup-content">
+        <h2>Driver Details</h2>
+        <p id="driverInfo"></p>
+        <button onclick="closePopup('driverPopup')">OK</button>
     </div>
 </div>
